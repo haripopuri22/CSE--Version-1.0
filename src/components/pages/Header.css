@@ -1,0 +1,126 @@
+#hero {
+  display: table;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background: url('./Images/NITRR.jpg') top center;
+  background-repeat: no-repeat;
+}
+@media (min-width: 1024px) {
+  #hero {
+    background-attachment: fixed;
+  }
+}
+.hero-logo {
+  margin: 20px;
+  opacity: 0.6;
+  max-width: 25%;
+  margin-left: 530px;
+}
+.hero-container {
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+  font-family: ' "Merriweather", serif';
+}
+
+svg {
+  font-family: 'Russo One', sans-serif;
+  position: relative;
+  width: 100%;
+  height: 50%%;
+}
+svg text {
+  text-transform: uppercase;
+  animation: stroke 5s infinite alternate;
+  stroke-width: 2;
+  stroke: #365fa0;
+  font-size: 50px;
+}
+@keyframes stroke {
+  0% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: rgba(54, 95, 160, 1);
+    stroke-dashoffset: 25%;
+    stroke-dasharray: 0 50%;
+    stroke-width: 2;
+  }
+  70% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: rgba(54, 95, 160, 1);
+  }
+  80% {
+    fill: rgba(72, 138, 20, 0);
+    stroke: rgba(54, 95, 160, 1);
+    stroke-width: 3;
+  }
+  100% {
+    fill: rgba(72, 138, 204, 1);
+    stroke: rgba(54, 95, 160, 0);
+    stroke-dashoffset: -25%;
+    stroke-dasharray: 50% 0;
+    stroke-width: 0;
+  }
+}
+
+h1 {
+  margin: 30px 0 10px 0;
+  font-weight: 700;
+  line-height: 48px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+}
+h2 {
+  color: rgb(255, 255, 255);
+  margin-bottom: 50px;
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
+}
+.actions a {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 2px;
+  transition: 0.5s;
+  margin: 10px;
+  text-decoration: none;
+}
+.main-1 {
+  background: #eb9a03;
+  border: 2px solid #eb9a03;
+  color: #000;
+  font-weight: bold;
+}
+.main-1:hover {
+  background: transparent;
+  border: 2px solid #eb9a03;
+  color: black;
+  text-decoration: none;
+}
+.main-2 {
+  border: 2px solid #eb9a03;
+  color: black;
+}
+.main-2:hover {
+  background: #eb9a03;
+  border: 2px solid #eb9a03;
+  text-decoration: none;
+  color: #fff;
+}
