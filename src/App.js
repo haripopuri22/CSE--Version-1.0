@@ -3,13 +3,14 @@ import Navbar from './components/Navbar';
 import './App.css';
 import Home from './components/pages/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import DepartmentOverview from './components/pages/DepartmentOverview/DepartmentOverview';
 import FacultyOverview from './components/pages/FacultyOverview/FacultyOverview';
-import Services from './components/pages/Services';
-import Products from './components/pages/Products';
-import ContactUs from './components/pages/ContactUs';
-import SignUp from './components/pages/SignUp';
-import Marketing from './components/pages/Marketing';
-import Consulting from './components/pages/Consulting';
+import Curriculum from './components/pages/CurricullumAndOverview/Curriculum';
+import Research from './components/pages/Research/Research';
+import Events from './components/pages/Events/Events';
+import ContactInformation from './components/pages/ContactInformation/ContactInformation';
+import NewsAndAnnouncement from './components/pages/NewsAndAnnouncement/NewsAndAnnouncement';
+import StudentResources from './components/pages/StudentResources/StudentResources';
 import Footer from './components/pages/Footer';
 
 function App() {
@@ -18,12 +19,11 @@ function App() {
       <Navbar />
       <Switch>
         <Route path="/" exact component={Home} />
-        <Route path="/services" component={Services} />
-        <Route path="/products" component={FacultyOverview} />
-        <Route path="/contact-us" component={ContactUs} />
-        <Route path="/sign-up" component={SignUp} />
-        <Route path="/marketing" component={Marketing} />
-        <Route path="/consulting" component={Consulting} />
+        <Route path="/FacultyOverview" component={FacultyOverview} />
+        <Route path="/Curriculum" component={Curriculum} />
+        <Route path="/Research" component={Research} />
+        <Route path="/StudentResources" component={StudentResources} />
+        <Route path="/ContactInformation" component={ContactInformation} />
       </Switch>
       <Footer />
     </Router>

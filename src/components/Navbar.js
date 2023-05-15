@@ -48,21 +48,29 @@ function Navbar() {
             onMouseLeave={onMouseLeave}
           >
             <Link
-              to="/services"
+              to="/FacultyOverview"
               className="nav-links"
               onClick={closeMobileMenu}
             >
-              Pages <i className="fas fa-caret-down" />
+              Faculty And Staff
             </Link>
-            {dropdown && <Dropdown />}
           </li>
           <li className="nav-item">
             <Link
-              to="/products"
+              to="/Curriculum"
               className="nav-links"
               onClick={closeMobileMenu}
             >
-              Faculties
+              Curricullum
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="/Research"
+              className="nav-links"
+              onClick={closeMobileMenu}
+            >
+              Research
             </Link>
           </li>
           <li className="nav-item">
@@ -71,21 +79,12 @@ function Navbar() {
               className="nav-links"
               onClick={closeMobileMenu}
             >
-              Achievements
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link
-              to="/contact-us"
-              className="nav-links"
-              onClick={closeMobileMenu}
-            >
-              Courses Offered
+              StudentResources
             </Link>
           </li>
           <li>
             <Link
-              to="/sign-up"
+              to="/ContactInformation"
               className="nav-links-mobile"
               onClick={closeMobileMenu}
             >
