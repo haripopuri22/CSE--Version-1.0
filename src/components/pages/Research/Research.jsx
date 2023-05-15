@@ -3,7 +3,7 @@ import './Research.css';
 export default function Research() {
   return (
     <>
-      <h1 className="consulting">FacultyOverview</h1>
+      <h1 className="consulting">Research</h1>
     </>
   );
 }
