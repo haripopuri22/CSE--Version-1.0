@@ -68,7 +68,6 @@ export default function Curriculum() {
               </div>
               <br />
               <button className="button" onClick={handleShowButtonClick}>
-                <span></span>
                 Show
               </button>
             </div>
